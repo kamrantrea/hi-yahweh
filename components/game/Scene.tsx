@@ -14,6 +14,9 @@ import HistoricalContext from './HistoricalContext'
 
 const MOVEMENT_SPEED = 5
 
+// Game control keys
+const GAME_CONTROL_KEYS = ['w', 'a', 's', 'd', 'ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight']
+
 export default function Scene() {
   const currentScene = useGameStore((state) => state.currentScene)
   const playerState = useGameStore((state) => state.playerState)
@@ -97,7 +100,7 @@ export default function Scene() {
       const key = e.key.toLowerCase()
 
       // Prevent default for game keys
-      if (['w', 'a', 's', 'd', 'ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'].includes(key)) {
+      if (GAME_CONTROL_KEYS.includes(key)) {
         e.preventDefault()
       }
 

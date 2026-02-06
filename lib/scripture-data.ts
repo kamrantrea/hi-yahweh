@@ -51,7 +51,7 @@ export const genesisScriptures: ScriptureRange[] = [
         originalLanguage: {
           text: 'עֵץ הַדַּעַת טוֹב וָרָע',
           language: 'Hebrew',
-          transliteration: 'etz hada\'at tov vara',
+          transliteration: 'etz hada\'at tov va-ra',
         },
       },
     ],
